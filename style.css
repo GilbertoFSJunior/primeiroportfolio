@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Roboto+Slab:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+:root {
+  --gray01: #494949;
+  --gray02: #3b3b3b;
+  --lightgray: #74737a;
+  --black: #040513;
+  --blueocean: #013596;
+  --gray03: #4a4e69;
+  --graffite: #333335;
+  --softwhite: #d2dee2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 60%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.9rem; /* 18px */
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--softwhite);
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 7rem;
+  text-shadow: rgba(231, 216, 201, 0.7) 0px 2px 12px;
+}
+
+span {
+  color: var(--softwhite);
+  font-family: "Dancing Script", sans-serif;
+  font-size: 8rem;
+  text-decoration: solid;
+  background: linear-gradient(45deg, var(--blueocean), var(--gray03));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 4rem;
+  text-transform: none;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--softwhite);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--gray02);
+  box-shadow: rgba(97, 93, 90, 0.7) 0px 4px 12px;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 1.5rem;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  /* background: var(--graffite); */
+  text-shadow: rgb(201, 208, 231) 0px 4px 12px;
+  /* border-radius: 30px; */
+}
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  box-shadow: rgba(231, 216, 201, 0.7) 0px 4px 12px;
+}
+
+.introducao > p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--softwhite);
+  text-shadow: rgba(231, 216, 201, 0.7) 0px 0px 12px;
+  border-radius: 20px;
+}
+
+.secao-projetos {
+  text-align: center;
+  padding: 2rem 2rem;
+  background: var(--graffite);
+  justify-content: center;
+  height: 480px;
+}
+
+.projetos-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  margin: auto;
+}
+
+.projetos-grid a {
+  text-decoration: none;
+  color: var(--lightgray);
+  box-shadow: rgba(95, 188, 204, 0.7) 0px 0px 12px;
+  border-radius: 30px;
+}
+
+.projetos-grid a h2 {
+  font-size: 2rem;
+}
+
+.projetos-grid a:hover {
+  color: var(--softwhite);
+}
+
+.secao-projetos-header {
+  max-width: 1024px;
+  margin: 30px auto 6rem auto;
+  color: var(--softwhite);
+}
+
+.imagem-projetos {
+  border-radius: 20px;
+  box-shadow: rgba(95, 188, 204, 0.7) 0px 0px 12px;
+  height: 200px;
+  width: 300px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 2rem 0.5rem;
+}
+
+.titulo-contato {
+  font-size: 4rem;
+  padding: 2rem 0.5rem;
+  color: var(--softwhite);
+  background-color: var(--graffite);
+  font-style: italic;
+}
+
+.contato {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--graffite);
+  padding: 2rem;
+}
+
+.contato h3 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  color: var(--softwhite);
+  background-color: var(--graffite);
+}
+
+.contato ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 6rem;
+  text-transform: capitalize;
+  justify-content: space-between;
+  max-width: 640px;
+  margin: 30px auto;
+}
+
+.contato li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(95, 188, 204, 0.7) 0px 0px 12px;
+}
+
+.contato a {
+  text-decoration: none;
+  color: var(--softwhite);
+  font-weight: 700;
+}
+
+.contato a:hover {
+  background-color: var(--graffite);
+  color: var(--blueocean);
+  text-shadow: rgb(0, 150, 250) 0px 0px 5px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+.titulo-badges {
+  font-size: 4rem;
+  padding: 2rem 0.5rem;
+  color: var(--softwhite);
+  background-color: var(--graffite);
+  font-style: italic;
+}
+
+.badges {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--graffite);
+  padding: 2rem;
+}
+
+.badges h3 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  color: var(--softwhite);
+  background-color: var(--graffite);
+}
+
+.badges ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 6rem;
+  text-transform: capitalize;
+  justify-content: center;
+  max-width: 640px;
+  margin: 30px auto;
+}
+
+.badges a {
+  text-decoration: none;
+  color: var(--softwhite);
+  font-weight: 700;
+}
+
+.badges a:hover {
+  background-color: var(--graffite);
+  color: var(--blueocean);
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.conteudo-geral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: var(--graffite);
+}
+
+.container {
+  overflow: hidden;
+  width: 80%;
+  max-width: 1024px;
+}
+
+.container-carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: carrosselAnimacao 10s linear infinite;
+}
+
+.carrossel-item {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 10px;
+}
+
+.carrossel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: #013596;
+}
+
+@keyframes carrosselAnimacao {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+footer {
+  font-size: 2rem;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  color: var(--softwhite);
+  background: var(--graffite);
+  border-top: rgba(231, 216, 201, 0.8) 0px 4px 12px;
+  text-shadow: silver 0px 0px 5px;
+  box-shadow: rgba(231, 216, 201, 0.7) 0px 4px 12px;
+}
+
+@media (max-width: 665px) {
+  .secao-projetos {
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .projetos-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    margin: 20vh;
+  }
+
+  .contato ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
