@@ -181,7 +181,7 @@ ul {
 }
 
 .titulo-contato {
-  margin-top: 18rem;
+  margin-top: 5rem;
   font-size: 4rem;
   padding: 2rem 0.5rem;
   color: var(--softwhite);
@@ -214,6 +214,7 @@ ul {
   justify-content: space-between;
   max-width: 640px;
   margin: 30px auto;
+  gap: 5rem;
 }
 
 .contato li img {
@@ -230,6 +231,69 @@ ul {
 }
 
 .contato a:hover {
+  background-color: var(--graffite);
+  color: var(--blueocean);
+  text-shadow: rgb(0, 150, 250) 0px 0px 5px;
+}
+
+.titulo-techs {
+  margin-top: 5rem;
+  font-size: 4rem;
+  padding: 2rem 0.5rem;
+  color: var(--softwhite);
+  background-color: var(--graffite);
+  font-style: italic;
+}
+
+.techs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--graffite);
+  padding: 2rem;
+}
+
+.techs h3 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  color: var(--softwhite);
+  background-color: var(--graffite);
+}
+
+.techs ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 12rem;
+  text-transform: capitalize;
+  justify-content: center;
+  max-width: 640px;
+  /* margin: 15px auto; */
+  gap: 5rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.techs ul li:hover {
+  background-color: var(--graffite);
+  color: var(--blueocean);
+  text-shadow: rgb(0, 150, 250) 0px 0px 5px;
+}
+
+.techs li i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* box-shadow: rgba(95, 188, 204, 0.7) 0px 0px 12px; */
+}
+
+.techs a {
+  text-decoration: none;
+  color: var(--softwhite);
+  font-weight: 700;
+}
+
+.techs a:hover {
   background-color: var(--graffite);
   color: var(--blueocean);
   text-shadow: rgb(0, 150, 250) 0px 0px 5px;
@@ -307,7 +371,7 @@ ul {
 .carrossel {
   display: flex;
   flex-wrap: nowrap;
-  transition: transform 0.5s ease;
+  transition: transform 0.7s ease;
   width: 100%;
 }
 
@@ -321,7 +385,12 @@ ul {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 15px;
+  border-radius: 20px;
+}
+
+.carrossel-item img:hover {
+  box-shadow: rgb(255, 255, 255) 0px 0px 14px;
+  border-radius: 20px;
 }
 
 .arrow {
@@ -333,13 +402,13 @@ ul {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 1rem;
+  padding: 2rem;
   cursor: pointer;
   z-index: 10;
 }
 
 .arrow i {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .left-arrow {

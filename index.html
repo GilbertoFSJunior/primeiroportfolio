@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="style2.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -49,6 +50,7 @@
         <a href="https://gilbertofsjunior.github.io/PassWordGenerator/" target="_blank">
           <img src="Senhas01.png" class="imagem-projetos" />
           <h2 class="project-title">Gerador de Senhas</h2>
+          
         </a>
         <a
           href="https://gilbertofsjunior.github.io/MickeyClock/"
@@ -146,7 +148,7 @@
             <div class="carrossel-item">
               <img src="CertificadoSantander.png" alt="Santander" />
             </div>
-            <!-- <div class="carrossel-item">
+            <div class="carrossel-item">
               <img src="CertificadoAdaCss.png" alt="ADA TECH CSS" />
             </div>
             <div class="carrossel-item">
@@ -154,13 +156,54 @@
               </div>  
               <div class="carrossel-item">
                 <img src="CertificadoAdaLP.png" alt="LP Javascript" />
-              </div> -->
+              </div>
           </div>
           <button class="arrow right-arrow">
             <i class="fa-solid fa-circle-arrow-right"></i>
           </button>
         </div>
       </div>
+    </section>
+    
+
+    <section id="techs" class="techs">
+      <h2 class="titulo-contato">O que estou Aprendendo!</h2>
+      <!-- <h3>Tecnologias</h3> -->
+      <ul>
+        <li class="HTML5">
+          <i class="fab fa-html5"></i>
+          </a>
+        </li>
+        <li class="CSS3">
+          <i class="fab fa-css3-alt"></i>
+        </li>
+        <li class="Javascript">
+          <i class="fab fa-js"></i>
+        </li>
+        <li class="Python">
+          <i class="fab fa-python"></i>
+        </li>
+        <li class="Git">
+          <i class="fab fa-git"></i>
+        </li>
+        <li class="Github">
+          <i class="fab fa-github"></i>
+        </li>
+        <li class="React">
+          <i class="fab fa-react"></i>
+        </li>
+        <li class="Node">
+          <i class="fab fa-node"></i>
+        </li>
+        
+        <li class="MongoDB">
+          <i class="fas fa-database"></i>
+        </li>
+        <li class="Angular">
+          <i class="fab fa-angular"></i>
+        
+          
+      </ul>
     </section>
 
     <section id="contato" class="contato">
@@ -206,7 +249,7 @@
       let currentIndex = 0;
 
       function updateCarrossel() {
-        const itemWidth = carrosselItems[0].clientWidth;
+        const itemWidth = carrosselItems[1].clientWidth;
         carrossel.style.transform = `translateX(${
           -currentIndex * (itemWidth + 20)
         }px)`;
