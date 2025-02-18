@@ -41,6 +41,10 @@ h1 {
   text-shadow: rgba(231, 216, 201, 0.7) 0px 2px 12px;
 }
 
+p {
+  text-align: center;
+  font-size: 700px;
+
 h2 {
   font-size: 3rem; /* Ajustado para responsividade */
   text-transform: none;
